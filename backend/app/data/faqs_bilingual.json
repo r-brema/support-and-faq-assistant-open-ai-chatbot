@@ -1,0 +1,19 @@
+[
+  {
+    "theme": "Infos Générales",
+    "questions": [
+      {
+        "fr": "Quels sont vos horaires de travail ?",
+        "en": "What are your working hours?",
+        "subsidiary_fr": [
+          "À quelle heure ouvrez-vous et fermez-vous ?"
+        ],
+        "subsidiary_en": [
+          "At what time do you open and close?"
+        ],
+        "answer_fr": "Notre clinique est ouverte de 9 à 18 heures, du lundi au vendredi.",
+        "answer_en": "Our clinic is open from 9 a.m. to 6 p.m., Monday to Friday."
+      }
+    ]
+  }
+]

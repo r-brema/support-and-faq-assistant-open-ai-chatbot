@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+openai
+chromadb
+langchain
+langdetect
+pydantic
+python-dotenv
+tqdm
+
+
