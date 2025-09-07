@@ -3,8 +3,8 @@ To get started, follow these steps to clone the repository, set up a virtual env
 install the dependencies on your platform.
 Step 1: Clone the Repository
 Run the following command in your terminal or command prompt to clone the repository:
-git clone https://github.com/Coding-Crashkurse/LangGraph-Udemy-Course.git
-cd LangGraph-Udemy-Course
+git clone https://github.com/r-brema/support-and-faq-assistant-open-ai-chatbot.git
+cd support-and-faq-assistant-open-ai-chatbot
 Step 1: move to backend folder
 Step 2: Create a Virtual Environment
 Linux/Mac:
