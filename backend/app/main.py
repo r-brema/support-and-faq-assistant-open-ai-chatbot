@@ -5,8 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 # Initialize FastAPI app with metadata
 app = FastAPI(title="Healthcare FAQ Chatbot")
 
-# Enable CORS (Cross-Origin Resource Sharing) so the frontend (Deep Chat running on localhost:5173)
-# can communicate with this backend API without being blocked by browser policies
+# Enable CORS (Cross-Origin Resource Sharing) so the frontend (Deep Chat running on localhost:5173) can communicate with this backend API without being blocked by browser policies
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173"],  # frontend origin allowed to access this API
@@ -15,7 +14,7 @@ app.add_middleware(
 )
 
 # Register API routers
-# /chat -> chatbot query endpoint
+# /chat -> chatbot user query endpoint
 app.include_router(chat.router, prefix="/chat", tags=["chat"])
 
 # /ingest -> document ingestion endpoint (optional, can be disabled in production if not needed)

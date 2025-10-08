@@ -1,48 +1,9 @@
-import time
+import logging
 from typing import List
-from openai import OpenAI, APIError, RateLimitError, APITimeoutError
+from app.services.openai_client import get_openai_client, retryable
 from app.core.config import settings
 
-
-# Initialize OpenAI client using your API key
-client = OpenAI(api_key=settings.OPENAI_API_KEY)
-
-# -----------------------------
-# Retry helper for OpenAI API
-# -----------------------------
-def _retryable(func, *args, **kwargs):
-    """
-    Wraps an OpenAI API call with retries using exponential backoff.
-    
-    Args:
-        func: The function to call (e.g., client.embeddings.create)
-        *args, **kwargs: Arguments to pass to the function
-    
-    Returns:
-        The result of the API call if successful.
-    
-    Raises:
-        The last exception if all retries fail.
-    """
-    max_attempts = 5        # Maximum number of attempts
-    backoff = 1.5           # Multiplier for exponential backoff
-    delay = 1.0             # Initial wait time before retrying
-    last_err = None         # Store last exception if all retries fail
-
-    for _ in range(max_attempts):
-        try:
-            # Attempt to call the API function
-            return func(*args, **kwargs)
-        except (RateLimitError, APITimeoutError, APIError) as e:
-            # Catch common transient errors
-            last_err = e
-            # Wait for the current delay before retrying
-            time.sleep(delay)
-            # Increase the delay exponentially for next retry
-            delay *= backoff
-
-    # If all retries fail, raise the last exception
-    raise last_err
+logger = logging.getLogger(__name__)
 
 # -----------------------------
 # Main embedding function
@@ -62,8 +23,11 @@ def embed_texts(texts: List[str]) -> List[List[float]]:
     if not texts:
         return []
 
+    # Initialize OpenAI client
+    client = get_openai_client()
+    
     # Call the OpenAI embeddings API with retry logic
-    resp = _retryable(
+    resp = retryable(
         client.embeddings.create,      # API function
         model=settings.EMBEDDING_MODEL,  # Embedding model to use
         input=texts,                   # Texts to embed

@@ -13,6 +13,7 @@ Workflow:
 
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
+from typing import List
 from app.services.rag import query_faq
 import logging
 
@@ -25,7 +26,10 @@ logger = logging.getLogger(__name__)
 # ---------------------------
 # Request & Response Models
 # ---------------------------
-
+class Message(BaseModel):
+    role: str
+    text: str
+    
 class ChatRequest(BaseModel):
     """
     Defines the schema for incoming chat requests.
@@ -33,7 +37,8 @@ class ChatRequest(BaseModel):
     Attributes:
         question (str): The user’s input question to be processed by the RAG system.
     """
-    question: str
+    # question: str
+    messages: List[Message]  # DeepChat sends an array of messages
 
 
 class ChatResponse(BaseModel):
@@ -44,8 +49,9 @@ class ChatResponse(BaseModel):
         answer (str): The AI-generated answer from the RAG system.
         language (str): The detected language of the user’s question.
     """
-    answer: str
-    language: str
+    role: str
+    text: str
+    
 
 
 # ---------------------------
@@ -78,16 +84,35 @@ async def chat(request: ChatRequest):
     """
     try:
         # Pass question to the RAG pipeline (handles embeddings, vector search, and LLM response)
-        result = await query_faq(request.question)
+        
+    
+        # Pass question to the RAG pipeline (handles embeddings, vector search, and LLM response)
+        # Step 1: Extract messages
+        messages = request.messages
 
+        # Step 2: Filter user messages
+        user_messages = [m for m in request.messages if m.role == "user"]
+
+        # Step 3: Validate non-empty
+        if not user_messages:
+            raise ValueError("No user messages provided")
+
+        latest_user_question = user_messages[-1].text.strip()  # pick the most recent
+        if not latest_user_question:
+            raise ValueError("User message text is empty")
+
+        print("User message text:", latest_user_question)
+        result = await query_faq(latest_user_question)
+        
+        print('rag answer: ', result)
         # Validate RAG response structure
         if not result or "answer" not in result:
             raise HTTPException(status_code=500, detail="Query service returned no response")
 
         # Log Q/A pair for observability
         logger.info(
-            f"Q: {request.question} | "
-            f"Lang: {result.get('language')} | "
+            f"Q: {latest_user_question} | "
+            f"Lang: {result['language']} | "
             f"A: {result['answer'][:60]}..."  # Log only first 60 chars of answer
         )
 

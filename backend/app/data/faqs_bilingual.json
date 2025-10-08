@@ -6,13 +6,323 @@
         "fr": "Quels sont vos horaires de travail ?",
         "en": "What are your working hours?",
         "subsidiary_fr": [
-          "À quelle heure ouvrez-vous et fermez-vous ?"
+          "À quelle heure ouvrez-vous et fermez-vous ?",
+          "Pouvez-vous me dire quelles sont vos heures d'ouverture ?",
+          "Quand la clinique (le cabinet) est-elle ouverte ?",
+          "Jusqu'à quelle heure êtes-vous ouvert ?",
+          "Êtes-vous ouvert le week-end ?",
+          "La clinique est-elle ouverte en ce moment même ?",
+          "Avez-vous des horaires spécifiques pour les visites sans rendez-vous ?"
         ],
         "subsidiary_en": [
-          "At what time do you open and close?"
+          "At what time do you open and close?",
+          "Can you tell me your opening hours?",
+          "When is the clinic (office) open?",
+          "Until what time are you open?",
+          "Are you open on weekends?",
+          "Is the clinic open right now?",
+          "Do you have specific hours for walk-ins?"
         ],
         "answer_fr": "Notre clinique est ouverte de 9 à 18 heures, du lundi au vendredi.",
         "answer_en": "Our clinic is open from 9 a.m. to 6 p.m., Monday to Friday."
+      },
+      {
+        "fr": "Comment puis-je contacter un médecin ?",
+        "en": "How can I contact a doctor?",
+        "subsidiary_fr": [
+          "Puis-je contacter mon médecin directement ?",
+          "Comment puis-je joindre un médecin ?"
+        ],
+        "subsidiary_en": [
+          "Can I contact my doctor directly?",
+          "How do I reach a doctor?"
+        ],
+        "answer_fr": "Vous pouvez contacter votre médecin directement via la plateforme MediCALLink ou contacter le secrétariat.",
+        "answer_en": "You can contact your doctor directly via the MediCALLink platform or contact the secretariat."
+      },
+      {
+        "fr": "Quels sont les examens médicaux qu’il est possible de réaliser dans votre cabinet ?",
+        "en": "What medical examinations can be performed in your practice?",
+        "subsidiary_fr": ["Quelles sont les possibilités d'examens ?"],
+        "subsidiary_en": ["What examinations are available?"],
+        "answer_fr": "Il est possible de réaliser un large éventail d’examens dans notre centre. Pour plus d’informations, consultez notre site Internet ou appelez notre secrétariat.",
+        "answer_en": "A wide range of examinations is available at our center. For more information, please visit our website or call our office."
+      },
+      {
+        "fr": "Où vous trouvez-vous ?",
+        "en": "Where are you located?",
+        "subsidiary_fr": ["Comment puis-je me rendre à la clinique ?"],
+        "subsidiary_en": ["How do I get to the clinic?"],
+        "answer_fr": "Notre centre se situe au : (fiche du centre / cabinet). Plusieurs possibilités d’accès en transports sont possibles.",
+        "answer_en": "Our center is located at: (center / office information). Several transport access options are available."
+      }
+    ]
+  },
+  {
+    "theme": "RDV & CS",
+    "questions": [
+      {
+        "fr": "Comment prendre un rendez-vous ?",
+        "en": "How can I make an appointment?",
+        "subsidiary_fr": [
+          "Comment puis-je prendre rendez-vous ?",
+          "Puis-je prendre rendez-vous en ligne ?"
+        ],
+        "subsidiary_en": [
+          "How do I schedule an appointment?",
+          "Can I book an appointment online?"
+        ],
+        "answer_fr": "Pour prendre un RDV, vous pouvez prendre rendez-vous en ligne depuis notre plateforme médicale ou contacter notre secrétariat par téléphone.",
+        "answer_en": "To make an appointment, you can book online from our medical platform or contact our secretariat by phone."
+      },
+      {
+        "fr": "Puis-je reporter mon rendez-vous ?",
+        "en": "Can I reschedule my appointment?",
+        "subsidiary_fr": ["Comment puis-je reprogrammer mon rendez-vous ?"],
+        "subsidiary_en": ["How can I reschedule my appointment?"],
+        "answer_fr": "Pour tout report de rendez-vous, merci de nous informer en amont du report.",
+        "answer_en": "For any appointment postponement, please inform us in advance."
+      },
+      {
+        "fr": "Comment puis-je annuler un rendez-vous ?",
+        "en": "How can I cancel an appointment?",
+        "subsidiary_fr": [
+          "Est-ce que des rappels de rendez-vous me sont envoyés ?",
+          "Que se passe-t-il si je manque mon rendez-vous ?"
+        ],
+        "subsidiary_en": [
+          "Are appointment reminders sent to me?",
+          "What happens if I miss my appointment?"
+        ],
+        "answer_fr": "Vous pouvez annuler votre rendez-vous depuis le site web ou l’application, ou contacter notre secrétariat par téléphone.",
+        "answer_en": "You can cancel your appointment from the website or the app, or contact our secretariat by phone."
+      },
+      {
+        "fr": "Proposez-vous des consultations en ligne ?",
+        "en": "Do you offer online consultations?",
+        "subsidiary_fr": [
+          "Puis-je consulter un spécialiste en particulier via votre plateforme ?",
+          "Comment choisir le mode de consultation (en présentiel ou en téléconsultation) ?"
+        ],
+        "subsidiary_en": [
+          "Can I consult a specific specialist through your platform?",
+          "How can I choose the consultation method (in-person or teleconsultation)?"
+        ],
+        "answer_fr": "Des créneaux en téléconsultation sont possibles selon les disponibilités des médecins.",
+        "answer_en": "Teleconsultation slots are possible depending on doctors' availability."
+      },
+      {
+        "fr": "Quels sont les tarifs de consultation ?",
+        "en": "What are the consultation fees?",
+        "subsidiary_fr": [
+          "Y a-t-il des frais supplémentaires pour certains types de consultations ?",
+          "Quels sont les créneaux disponibles pour une consultation ?",
+          "Quelle est la durée moyenne d'une consultation ?",
+          "Comment préparer ma consultation pour qu'elle soit optimale ?",
+          "Comment mettre à jour mes informations de contact sur mon profil ?"
+        ],
+        "subsidiary_en": [
+          "Are there additional fees for certain types of consultations?",
+          "What are the available slots for a consultation?",
+          "What is the average length of a consultation?",
+          "How can I prepare for my consultation so that it is optimal?",
+          "How do I update my contact information on my profile?"
+        ],
+        "answer_fr": "Nos tarifs de consultation varient entre __ et ____. Merci de consulter la fiche du praticien pour en savoir plus ou de contacter notre secrétariat.",
+        "answer_en": "Our consultation rates vary between __ and ____. Please consult the practitioner's profile for more details or contact our secretariat."
+      }
+    ]
+  },
+  {
+    "theme": "Règlement et Remboursement",
+    "questions": [
+      {
+        "fr": "Acceptez-vous les mutuelles ?",
+        "en": "Do you accept mutual insurance?",
+        "subsidiary_fr": [
+          "Comment se déroule le remboursement par la sécurité sociale ?",
+          "Quels sont les délais de remboursement ?",
+          "Dois-je régler l'intégralité des frais avant d'être remboursé(e) ?",
+          "Que faire en cas de refus de remboursement de la part de ma mutuelle ?",
+          "Le ticket modérateur est-il pris en charge par vous ou par la mutuelle ?",
+          "Les consultations en ligne et les téléconsultations sont-elles également remboursées ?",
+          "Quelles informations dois-je fournir à ma mutuelle pour faciliter le remboursement ?"
+        ],
+        "subsidiary_en": [
+          "How does social security reimbursement work?",
+          "What are the reimbursement timelines?",
+          "Do I have to pay the full amount before getting a refund?",
+          "What should I do if my mutual insurance refuses reimbursement?",
+          "Is the copayment covered by you or by the mutual insurance?",
+          "Are online consultations and teleconsultations also reimbursed?",
+          "What information should I provide to my mutual to facilitate reimbursement?"
+        ],
+        "answer_fr": "Nous délivrons une feuille de soins à transmettre à votre Mutuelle pour obtenir le remboursement de vos soins selon votre contrat. Pour toute vérification de couverture, contactez directement votre Mutuelle.",
+        "answer_en": "We provide a care sheet to send to your mutual insurance in order to obtain reimbursement according to your contract. For coverage verification, please contact your mutual directly."
+      },
+      {
+        "fr": "Quels sont les modes de paiement acceptés ?",
+        "en": "What payment methods are accepted?",
+        "subsidiary_fr": ["Fournissez-vous des reçus de facturation ?"],
+        "subsidiary_en": ["Do you provide billing receipts?"],
+        "answer_fr": "Les différents modes de paiement acceptés figurent sur la fiche MediCALLink de votre praticien.",
+        "answer_en": "The different accepted payment methods are listed on your practitioner's MediCALLink page."
+      },
+      {
+        "fr": "Fournissez-vous des reçus de facturation ?",
+        "en": "Do you provide billing receipts?",
+        "subsidiary_fr": [],
+        "subsidiary_en": [],
+        "answer_fr": "Oui, des factures sont délivrées à la demande du patient.",
+        "answer_en": "Yes, invoices are issued at the patient's request."
+      }
+    ]
+  },
+  {
+    "theme": "Dossier médical et CR médicaux",
+    "questions": [
+      {
+        "fr": "Comment puis-je accéder à mon dossier médical ?",
+        "en": "How can I access my medical record?",
+        "subsidiary_fr": [
+          "Comment puis-je accéder à mon dossier médical en ligne ?",
+          "Est-il possible de consulter l’historique de mes consultations et examens ?",
+          "Comment puis-je visualiser les comptes rendus médicaux (CR) de mes consultations ?"
+        ],
+        "subsidiary_en": [
+          "How can I access my medical records online?",
+          "Is it possible to view my consultation and exam history?",
+          "How can I view the medical reports (MRs) from my consultations?"
+        ],
+        "answer_fr": "Votre dossier médical complet est accessible depuis la plateforme MediCALLink. Connectez-vous avec votre identifiant et mot de passe, définis lors de votre première inscription.",
+        "answer_en": "Your complete medical record is accessible from the MediCALLink platform. Log in with your username and password configured during your first registration."
+      },
+      {
+        "fr": "Comment puis-je obtenir les résultats de mes examens de laboratoire ?",
+        "en": "How can I get my lab test results?",
+        "subsidiary_fr": [],
+        "subsidiary_en": [],
+        "answer_fr": "Pour obtenir vos résultats d’examens de biologie médicale, contactez le laboratoire où vos prélèvements sanguins ont été réalisés.",
+        "answer_en": "To obtain your medical biology test results, please contact the laboratory where your blood samples were taken."
+      },
+      {
+        "fr": "Puis-je partager mon dossier avec un autre médecin ?",
+        "en": "Can I share my records with another doctor?",
+        "subsidiary_fr": [
+          "Qui peut accéder à mes données médicales sur la plateforme ?",
+          "Comment sont sécurisées les informations de mon dossier médical ?"
+        ],
+        "subsidiary_en": [
+          "Who can access my medical data on the platform?",
+          "How is the information in my medical record secured?"
+        ],
+        "answer_fr": "Oui, vous pouvez autoriser un médecin à avoir accès à votre dossier médical sur MediCALLink.",
+        "answer_en": "Yes, you can authorize a doctor to access your medical records on MediCALLink."
+      }
+    ]
+  },
+  {
+    "theme": "Soins d'urgence",
+    "questions": [
+      {
+        "fr": "Que dois-je faire en cas d'urgence médicale ?",
+        "en": "What should I do in a medical emergency?",
+        "subsidiary_fr": [
+          "Comment signaler une urgence directement via l'application ?"
+        ],
+        "subsidiary_en": [
+          "How can I report an emergency directly through the app?"
+        ],
+        "answer_fr": "En cas d’urgence, contactez le 15.",
+        "answer_en": "In case of emergency, call 15."
+      }
+    ]
+  },
+  {
+    "theme": "Docteurs & Spécialistes",
+    "questions": [
+      {
+        "fr": "Quels sont les types de spécialistes dont vous disposez ?",
+        "en": "What types of specialists do you have?",
+        "subsidiary_fr": [
+          "Quels sont les types de spécialistes disponibles sur la plateforme (cardiologues, neurologues, pneumologues, etc.) ?"
+        ],
+        "subsidiary_en": [
+          "What types of specialists are available on the platform (cardiologists, neurologists, pulmonologists, etc.)?"
+        ],
+        "answer_fr": "Notre centre compte de nombreux professionnels de santé, médicaux et paramédicaux.",
+        "answer_en": "Our center has many health professionals, both medical and paramedical."
+      },
+      {
+        "fr": "Comment choisir le bon médecin pour mon état de santé ?",
+        "en": "How do I choose the right doctor for my health condition?",
+        "subsidiary_fr": [
+          "Quels critères me permettent de choisir le médecin le mieux adapté à mon état de santé ?"
+        ],
+        "subsidiary_en": [
+          "What criteria help me choose the doctor best suited to my health condition?"
+        ],
+        "answer_fr": "Demandez conseil à votre médecin traitant. Tous les médecins de notre centre sont expérimentés et qualifiés.",
+        "answer_en": "Ask your primary care physician for advice. All doctors in our center are experienced and qualified."
+      },
+      {
+        "fr": "Puis-je demander un médecin particulier pour mon rendez-vous ?",
+        "en": "Can I request a specific doctor for my appointment?",
+        "subsidiary_fr": [
+          "Puis-je changer de spécialiste si ma première consultation ne correspond pas à mes attentes ?",
+          "Est-il possible d’avoir un second avis via un autre spécialiste ?"
+        ],
+        "subsidiary_en": [
+          "Can I change specialists if my first consultation does not meet my expectations?",
+          "Is it possible to get a second opinion via another specialist?"
+        ],
+        "answer_fr": "Oui, vous pouvez prendre rendez-vous avec le médecin de votre choix, selon les disponibilités.",
+        "answer_en": "Yes, you can book an appointment with the doctor of your choice, subject to availability."
+      }
+    ]
+  },
+  {
+    "theme": "Médicaments et Ordonnances",
+    "questions": [
+      {
+        "fr": "Comment renouveler mon ordonnance ?",
+        "en": "How do I renew my prescription?",
+        "subsidiary_fr": [
+          "Quels documents dois-je fournir pour valider le renouvellement de mon ordonnance ?",
+          "Comment signaler une erreur ou une modification à apporter à mon ordonnance en ligne ?"
+        ],
+        "subsidiary_en": [
+          "What documents do I need to provide to validate my prescription renewal?",
+          "How do I report an error or a change to be made to my online prescription?"
+        ],
+        "answer_fr": "Pour renouveler votre ordonnance, prenez rendez-vous en ligne. Le médecin pourra renouveler votre traitement si approprié.",
+        "answer_en": "To renew your prescription, please book an appointment online. The doctor will renew your treatment as appropriate."
+      },
+      {
+        "fr": "Puis-je obtenir mon ordonnance en ligne ?",
+        "en": "Can I get my prescription online?",
+        "subsidiary_fr": [
+          "Puis-je consulter mon historique d'ordonnances via la plateforme ?"
+        ],
+        "subsidiary_en": [
+          "Can I view my prescription history through the platform?"
+        ],
+        "answer_fr": "Oui, toutes vos ordonnances sont disponibles. Demandez conseil à votre pharmacien.",
+        "answer_en": "Yes, all your prescriptions are available. Ask your pharmacist for advice."
+      },
+      {
+        "fr": "Puis-je envoyer directement ma demande d'ordonnance à mon pharmacien depuis la plateforme ?",
+        "en": "Can I send my prescription request directly to my pharmacist from the platform?",
+        "subsidiary_fr": [
+          "Les médicaments sont-ils livrés à domicile ?",
+          "Comment garantir la confidentialité et la sécurité de mes données d'ordonnance en ligne ?"
+        ],
+        "subsidiary_en": [
+          "Are the medications delivered to your home?",
+          "How can I ensure the confidentiality and security of my online prescription data?"
+        ],
+        "answer_fr": "Veuillez consulter la plateforme pour les fonctionnalités disponibles et demander conseil à votre pharmacien.",
+        "answer_en": "Please check the platform for available features and consult your pharmacist for advice."
       }
     ]
   }
