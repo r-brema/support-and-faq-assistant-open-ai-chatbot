@@ -9,11 +9,12 @@ app = FastAPI(title="Healthcare FAQ Chatbot")
 
 # Enable CORS (Cross-Origin Resource Sharing) so the frontend (Deep Chat running on localhost:5173) can communicate with this backend API without being blocked by browser policies
 app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["http://localhost:5173",
-                    "https://support-and-faq-assistant-open-ai-c.vercel.app"],  # frontend origin allowed to access this API
-    allow_methods=["*"],  # allow all HTTP methods (GET, POST, PUT, DELETE, etc.)
-    allow_headers=["*"],  # allow all custom headers
+      CORSMiddleware,
+    allow_origins=[],  # keep empty if using regex
+    allow_origin_regex=r"https://support-and-faq-assistant-open-ai.*\.vercel\.app",
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # # Register API routers
