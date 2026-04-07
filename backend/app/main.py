@@ -1,3 +1,4 @@
+import os
 from fastapi import FastAPI
 from app.api import chat, ingest
 from fastapi.middleware.cors import CORSMiddleware
