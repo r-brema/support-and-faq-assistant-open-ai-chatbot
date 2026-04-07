@@ -1,11 +1,12 @@
-fastapi
-uvicorn
-openai
-chromadb
-langchain
-langdetect
-pydantic
-python-dotenv
-tqdm
+fastapi=0.116.1
+uvicorn=0.35.0
+openai=1.106.1
+chromadb=01.0.20
+langchain=0.3.27
+langdetect=1.0.9
+pydantic=2.11.7
+python-dotenv=1.1.0
+tqdm=4.67.1 # progress bar
+openai-whisper=20240930
 
 
